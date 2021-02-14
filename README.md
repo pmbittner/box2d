@@ -3,6 +3,23 @@
 # Build Status
 [![Build Status](https://travis-ci.org/erincatto/box2d.svg?branch=master)](https://travis-ci.org/erincatto/box2d)
 
+### Build Instructions for Usage With PaxEngine3
+PaxEngine3 assumes the built box2d library in the following paths:
+
+#### Windows with MSVC:
+When using MSVC, PaxEngine3 will look for box2d in the following place:
+
+Debug: `bin/msvc-debug/bin/box2d.lib`
+
+Release: `bin/msvc-release/bin/box2d.lib`
+
+#### Others:
+With other compilers, PaxEngine3 will look for box2d in the following place:
+
+Debug: `bin/build-debug/bin/libbox2d.a`
+
+Release: `bin/build-release/bin/libbox2d.a`
+
 # Box2D 
 
 Box2D is a 2D physics engine for games.
