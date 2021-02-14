@@ -167,8 +167,9 @@ void b2Contact::Update(b2ContactListener* listener)
 {
 	b2Manifold oldManifold = m_manifold;
 
+    // Paul: Uncommented this line to implement one-way platforms (http://www.iforce2d.net/b2dtut/one-way-walls).
 	// Re-enable this contact.
-	m_flags |= e_enabledFlag;
+//	m_flags |= e_enabledFlag;
 
 	bool touching = false;
 	bool wasTouching = (m_flags & e_touchingFlag) == e_touchingFlag;
